@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: wget -rkpN -e robots=off https://mehulagg.github.io/Images/
+- script: wget -r --no-parent --reject "index.html*" https://mehulagg.github.io/Images/
   displayName: 'Run a one-line script'
 - task: PublishPipelineArtifact@1
   inputs:
