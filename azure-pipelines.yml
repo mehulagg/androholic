@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: wget -rkpN -e robots=off http://androholic.in/
+- script: wget -rkpN -e robots=off https://mehulagg.github.io/Images/
   displayName: 'Run a one-line script'
 - task: PublishPipelineArtifact@1
   inputs:
