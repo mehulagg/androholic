@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: wget -m -A * -pk -e robots=off https://mehulagg.github.io/Images/
+- script: wget -m -A * -pk -e robots=off https://nostalgic-brattain-cd18e4.netlify.com
   displayName: 'Run a one-line script'
 - task: PublishPipelineArtifact@1
   inputs:
